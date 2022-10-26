@@ -1,5 +1,7 @@
 # OneDark
 
+I am attempting to update the tree-sitter highlights to 0.8 but idk if i will succeed
+
 A dark Neovim theme written in Lua. Includes extra themes for Kitty and Alacritty
 
 <img width="1680" alt="Screen Shot 2021-05-23 at 3 48 41 PM" src="https://user-images.githubusercontent.com/8846086/119279210-16d39c00-bbdf-11eb-8604-b7258c8ff72e.png">
