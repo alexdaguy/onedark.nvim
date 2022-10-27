@@ -23,7 +23,7 @@ function M.setup(config)
     lCursor = { fg = c.bg, bg = c.fg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM = { fg = c.bg, bg = c.fg }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn = { bg = c.bg_highlight }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine = { bg = c.bg_highlight }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine = { bg = c.bg_light }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory = { fg = c.blue }, -- directory names (and other special names in listings)
     DiffAdd = { bg = c.diff.add }, -- diff mode: Added line |diff.txt|
     DiffChange = { bg = c.diff.change }, -- diff mode: Changed line |diff.txt|
@@ -219,7 +219,7 @@ function M.setup(config)
     -- TSFloat             = { };    -- For floats.
     -- TSFunction          = { };    -- For function (calls and definitions).
     -- TSFuncBuiltin       = { };    -- For builtin functions: `table.insert` in Lua.
-    -- TSFuncMacro         = { };    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+    ["@function.macro"] = { fg = c.blue };    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
     ["@include"] = { fg = c.purple }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
     ["@keyword"] = { fg = c.purple, style = config.keywordStyle }, -- For keywords that don't fall in previous categories.
     ["@keyword.function"] = { fg = c.purple, style = config.functionStyle }, -- For keywords used to define a fuction.
@@ -228,7 +228,7 @@ function M.setup(config)
     ["@namespace"] = { fg = c.red }, -- For identifiers referring to modules and namespaces.
     -- TSNone              = { };    -- TODO: docs
     -- TSNumber            = { };    -- For all numbers
-    ["@operator"] = { fg = c.fg }, -- For any operator: `+`, but also `->` and `*` in C.
+    ["@operator"] = { fg = c.cyan }, -- For any operator: `+`, but also `->` and `*` in C.
     ["@parameter"] = { fg = c.red }, -- For parameters of a function.
     -- TSParameterReference= { };    -- For references to parameters of a function.
     ["@property"] = { fg = c.red }, -- Same as `TSField`.
@@ -245,7 +245,7 @@ function M.setup(config)
     ["@tag"] = { fg = c.red }, -- Tags like html tag names.
     ["@tag.delimiter"] = { fg = c.red }, -- Tag delimiter like `<` `>` `/`
     ["@tag.attribute"] = { fg = c.orange, style = config.keywordStyle },
-    ["@variable"] = { style = config.variableStyle, fg = c.yellow }, -- Any variable name that does not have another highlight.
+    ["@variable"] = { style = config.variableStyle, fg = c.red }, -- Any variable name that does not have another highlight.
     ["@variable.builtin"] = { fg = c.red }, -- Variable names that are defined by the languages, like `this` or `self`.
 
     ["@text.reference"] = { fg = c.red }, -- FIXME
