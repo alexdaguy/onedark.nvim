@@ -47,13 +47,13 @@ Install the theme with your preferred package manager:
 [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'monsonjeremy/onedark.nvim'
+Plug 'alexdaguy/onedark.nvim'
 ```
 
 [packer](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use 'monsonjeremy/onedark.nvim'
+use 'alexdaguy/onedark.nvim'
 ```
 
 ## 🚀 Usage
