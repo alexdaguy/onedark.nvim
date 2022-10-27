@@ -1,6 +1,6 @@
 # OneDark
 
-I am attempting to update the tree-sitter highlights to 0.8 but idk if i will succeed
+In this fork I tried to update the tree-sitter highlights to neovim 0.8 highlight groups and also modify the theme a bit to my liking. This also means that the below screenshots are not actually exactly what this theme looks like because they were from the original project
 
 A dark Neovim theme written in Lua. Includes extra themes for Kitty and Alacritty
 
