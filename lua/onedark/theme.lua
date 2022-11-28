@@ -232,7 +232,7 @@ function M.setup(config)
     ["@parameter"] = { fg = c.red }, -- For parameters of a function.
     -- TSParameterReference= { };    -- For references to parameters of a function.
     ["@property"] = { fg = c.red }, -- Same as `TSField`.
-    ["@punctuation.delimiter"] = { fg = c.fg }, -- For delimiters ie: `.`
+    ["@punctuation.delimiter"] = { fg = c.cyan }, -- For delimiters ie: `.`
     ["@punctuation.bracket"] = { fg = c.fg_dark }, -- For brackets and parens.
     ["@punctuation.special"] = { fg = c.fg }, -- For special punctutation that does not fall in the catagories before.
     -- TSRepeat            = { };    -- For keywords related to loops.
@@ -249,6 +249,9 @@ function M.setup(config)
     ["@variable.builtin"] = { fg = c.red }, -- Variable names that are defined by the languages, like `this` or `self`.
 
     ["@text.reference"] = { fg = c.red }, -- FIXME
+    ["@text.environment"] = { fg = c.red },
+    ["@text.environment.name"] = { fg = c.green },
+    ["@text.math"] = { fg = c.yellow },
     -- TSText              = { };    -- For strings considered text in a markup language.
     -- TSEmphasis          = { };    -- For text to be represented with emphasis.
     -- TSUnderline         = { };    -- For text to be represented with an underline.
@@ -420,6 +423,10 @@ function M.setup(config)
     NotifyINFOTitle = { fg = c.diagnostics.info },
     NotifyDEBUGTitle = { fg = c.diagnostics.hint },
     NotifyTRACETitle = { fg = c.purple },
+
+    -- Neorg
+    ["@neorg.headings.1.title"] = { fg = c.cyan, style = "bold" },
+    ["@neorg.headings.1.prefix"] = { link = "@neorg.headings.1.title" },
   }
 
   theme.defer = {}
