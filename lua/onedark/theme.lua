@@ -218,8 +218,9 @@ function M.setup(config)
     ["@field"] = { fg = c.cyan }, -- For fields.
     -- TSFloat             = { };    -- For floats.
     -- TSFunction          = { };    -- For function (calls and definitions).
-    -- TSFuncBuiltin       = { };    -- For builtin functions: `table.insert` in Lua.
-    ["@function.macro"] = { fg = c.blue };    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+    ["@function.call"] = { fg = c.blue },
+    ["@function.macro"] = { fg = c.blue },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+    ["@function.builtin"] = { fg = c.blue },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
     ["@include"] = { fg = c.purple }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
     ["@keyword"] = { fg = c.purple, style = config.keywordStyle }, -- For keywords that don't fall in previous categories.
     ["@keyword.function"] = { fg = c.purple, style = config.functionStyle }, -- For keywords used to define a fuction.
@@ -241,7 +242,8 @@ function M.setup(config)
     ["@string.escape"] = { fg = c.red }, -- For escape characters within a string.
     -- TSSymbol            = { };    -- For identifiers referring to symbols or atoms.
     -- TSType              = { };    -- For types.
-    -- TSTypeBuiltin       = { };    -- For builtin types.
+    ["@type.builtin"] = { fg = c.yellow },
+
     ["@tag"] = { fg = c.red }, -- Tags like html tag names.
     ["@tag.delimiter"] = { fg = c.red }, -- Tag delimiter like `<` `>` `/`
     ["@tag.attribute"] = { fg = c.orange, style = config.keywordStyle },
