@@ -190,6 +190,13 @@ function M.setup(config)
     -- LspDiagnosticsSignWarning           = { }, -- Used for "Warning" signs in sign column
     -- LspDiagnosticsSignInformation       = { }, -- Used for "Information" signs in sign column
     -- LspDiagnosticsSignHint              = { }, -- Used for "Hint" signs in sign column
+    Blue = {fg = c.blue},
+    Cyan = {fg = c.cyan},
+    Purple = {fg = c.purple},
+    Orange = {fg = c.orange},
+    Yellow = {fg = c.yellow},
+    Green = {fg = c.green},
+    Red = {fg = c.red},
   }
 
   theme.plugins = {
@@ -342,6 +349,8 @@ function M.setup(config)
     DiagnosticWarning = { fg = c.warning },
     DiagnosticInformation = { fg = c.info },
     DiagnosticHint = { fg = c.hint },
+    SagaBorder = { fg = c.fg, bg = c.bg2 },
+    SagaNormal = { bg = c.bg2 },
 
     -- NeoVim
     healthError = { fg = c.error },
@@ -349,7 +358,7 @@ function M.setup(config)
     healthWarning = { fg = c.warning },
 
     -- BufferLine
-    BufferLineIndicatorSelected = { fg = c.git.change },
+    BufferLineIndicatorSelected = { fg = c.blue },
     BufferLineFill = { bg = c.black },
 
     -- Barbar
@@ -429,6 +438,10 @@ function M.setup(config)
     -- Neorg
     ["@neorg.headings.1.title"] = { fg = c.cyan, style = "bold" },
     ["@neorg.headings.1.prefix"] = { link = "@neorg.headings.1.title" },
+    ["@neorg.markup.bold"] = { link = "Bold" },
+    ["@neorg.markup.italic"] = { link = "Italic" },
+    ["@neorg.quotes.6.prefix"] = { link = "Purple" },
+    ["@neorg.quotes.6.content"] = { link = "Purple" },
   }
 
   theme.defer = {}
