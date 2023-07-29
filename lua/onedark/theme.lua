@@ -442,6 +442,9 @@ function M.setup(config)
     ["@neorg.markup.italic"] = { link = "Italic" },
     ["@neorg.quotes.6.prefix"] = { link = "Purple" },
     ["@neorg.quotes.6.content"] = { link = "Purple" },
+
+    -- mini.trailspace
+    MiniTrailspace = { bg = c.bg_visual },
   }
 
   theme.defer = {}
