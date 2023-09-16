@@ -75,7 +75,7 @@ To enable the `onedark` theme for `Lualine`, simply specify it in your lualine s
 ```lua
 require('lualine').setup {
   options = {
-    theme = 'onedark'
+    theme = 'onedark' -- use 'onedark_spacemacs' for spacemacs version
     -- ... your lualine config
   }
 }
