@@ -437,14 +437,32 @@ function M.setup(config)
 
     -- Neorg
     ["@neorg.headings.1.title"] = { fg = c.cyan, style = "bold" },
+    ["@neorg.tags.ranged_verbatim.document_meta.title"] = { fg = c.cyan, style = "bold" },
     ["@neorg.headings.1.prefix"] = { link = "@neorg.headings.1.title" },
     ["@neorg.markup.bold"] = { link = "Bold" },
     ["@neorg.markup.italic"] = { link = "Italic" },
+    ["@neorg.markup.underline"] = { link = "Underlined" },
     ["@neorg.quotes.6.prefix"] = { link = "Purple" },
     ["@neorg.quotes.6.content"] = { link = "Purple" },
+    ["@neorg.markup.strikethrough"] = { style = 'strikethrough' },
+    ["@neorg.lists.unordered.prefix"] = { fg = c.cyan },
+
+    -- markdown and stuff
+    ["@markup.heading.1"] = { fg = c.cyan, style = "bold" },
+    ["@markup.heading.2"] = { fg = c.blue, style = "bold" },
+    ["@markup.heading.3"] = { fg = c.yellow },
+    ["@markup.heading.4"] = { fg = c.green },
+    ["@markup.heading.5"] = { fg = c.blue },
+    ["@markup.heading.6"] = { fg = c.yellow },
+    ["@markup.raw"] = { fg = "#888e98" },
+    ["@markup.raw.block"] = { bg = "#22252c" },
 
     -- mini.trailspace
     MiniTrailspace = { bg = c.bg_visual },
+
+    -- Indent Blankline
+    IblIndent = { fg = c.fg_gutter, style = false },
+    IblScope = { fg = c.dark5 }
   }
 
   theme.defer = {}
