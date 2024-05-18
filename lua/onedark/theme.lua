@@ -444,7 +444,7 @@ function M.setup(config)
     ["@neorg.markup.underline"] = { link = "Underlined" },
     ["@neorg.quotes.6.prefix"] = { link = "Purple" },
     ["@neorg.quotes.6.content"] = { link = "Purple" },
-    ["@neorg.markup.strikethrough"] = { style = 'strikethrough' },
+    ["@neorg.markup.strikethrough"] = { style = "strikethrough" },
     ["@neorg.lists.unordered.prefix"] = { fg = c.cyan },
 
     -- markdown and stuff
@@ -456,6 +456,9 @@ function M.setup(config)
     ["@markup.heading.6"] = { fg = c.yellow },
     ["@markup.raw"] = { fg = "#888e98" },
     ["@markup.raw.block"] = { bg = "#22252c" },
+    ["@markup.italic"] = { link = "Italic" },
+    ["@markup.strong"] = { link = "Bold" },
+    ["@markup.strikethrough"] = { style = "strikethrough" },
 
     -- mini.trailspace
     MiniTrailspace = { bg = c.bg_visual },
