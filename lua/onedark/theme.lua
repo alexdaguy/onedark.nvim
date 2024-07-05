@@ -166,6 +166,8 @@ function M.setup(config)
     LspDiagnosticsUnderlineHint = { style = 'undercurl', sp = c.diagnostics.hint }, -- Used to underline "Hint" diagnostics
     LspInlayHint = { fg = c.fg_gutter, bg = c.bg_light },
 
+    ["@lsp.type.macro"] = { link = "@function" },
+
     -- neovim 0.6.0
     DiagnosticDefaultError = { fg = c.error }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
     DiagnosticDefaultWarn = { fg = c.warning }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
@@ -272,6 +274,24 @@ function M.setup(config)
 
     -- Lua
     -- luaTSProperty = { fg = c.red }, -- Same as `TSField`.
+
+    uiuaConst = { fg = c.orange },
+    uiuaShadowConst = { fg = c.fg },
+    uiuaPervasiveMonadic = { fg = c.green },
+    uiuaPervasiveDyadic = { fg = c.blue },
+    uiuaNoadic = { fg = c.red },
+    uiuaMonadic = { fg = c.green },
+    uiuaDyadic = { fg = c.blue },
+    uiuaMonadicMod = { fg = c.yellow },
+    uiuaOtherMod = { fg = c.purple },
+    uiuaOtherSF = { fg = c.purple },
+    uiuaDyadicSF = { fg = c.blue },
+    uiuaNoadicSF = { fg = c.red },
+    uiuaModifierSF = { fg = c.yellow },
+    uiuaNum = { fg = c.orange },
+    uiuaStr = { fg = c.cyan },
+    uiuaChar = { fg = c.cyan },
+    uiuaEsc = { fg = c.cyan },
 
     -- LspTrouble
     LspTroubleText = { fg = c.fg_dark },
