@@ -184,7 +184,7 @@ function M.setup(config)
     DiagnosticUnderlineInfo = { style = 'undercurl', sp = c.diagnostics.info }, -- Used to underline "Information" diagnostics
     DiagnosticUnderlineHint = { style = 'undercurl', sp = c.diagnostics.hint }, -- Used to underline "Hint" diagnostics
 
-    LspSignatureActiveParameter = { fg = c.orange },
+    LspSignatureActiveParameter = { fg = c.orange, bg = c.bg_visual },
 
     -- LspDiagnosticsFloatingError         = { }, -- Used to color "Error" diagnostic messages in diagnostics float
     -- LspDiagnosticsFloatingWarning       = { }, -- Used to color "Warning" diagnostic messages in diagnostics float
@@ -450,12 +450,14 @@ function M.setup(config)
     BlinkCmpKindOperator = { fg = c.cyan },
     BlinkCmpKindVariable = { fg = c.blue },
     BlinkCmpKindInterface = { fg = c.blue },
-    BlinkCmpKindText = { fg = c.blue },
+    BlinkCmpKindText = { fg = c.fg },
     BlinkCmpKindKeyword = { fg = c.dark5 },
     BlinkCmpKindEnum = { fg = c.yellow },
     BlinkCmpKindStruct = { fg = c.yellow },
     BlinkCmpKindClass = { fg = c.yellow },
     BlinkCmpGhostText = { fg = c.fg_gutter },
+    BlinkCmpLabelMatch = { fg = c.blue },
+    BlinkCmpMenuSelection = { bg = c.bg_visual },
 
     NotifyERRORBorder = { fg = c.diagnostics.error },
     NotifyWARNBorder = { fg = c.diagnostics.warn },
