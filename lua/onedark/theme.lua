@@ -442,6 +442,21 @@ function M.setup(config)
     CmpItemKindKeyword = { fg = c.dark5 },
     CmpItemAbbrDeprecated = { style = 'strikethrough', fg = c.fg_gutter },
 
+    -- blink.cmp highlights
+    BlinkCmpKindSnippet = { fg = c.green },
+    BlinkCmpKindField = { fg = c.red },
+    BlinkCmpKindFunction = { fg = c.purple },
+    BlinkCmpKindMethod = { fg = c.purple },
+    BlinkCmpKindOperator = { fg = c.cyan },
+    BlinkCmpKindVariable = { fg = c.blue },
+    BlinkCmpKindInterface = { fg = c.blue },
+    BlinkCmpKindText = { fg = c.blue },
+    BlinkCmpKindKeyword = { fg = c.dark5 },
+    BlinkCmpKindEnum = { fg = c.yellow },
+    BlinkCmpKindStruct = { fg = c.yellow },
+    BlinkCmpKindClass = { fg = c.yellow },
+    BlinkCmpGhostText = { fg = c.fg_gutter },
+
     NotifyERRORBorder = { fg = c.diagnostics.error },
     NotifyWARNBorder = { fg = c.diagnostics.warn },
     NotifyINFOBorder = { fg = c.diagnostics.info },
